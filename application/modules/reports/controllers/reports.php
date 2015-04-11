@@ -95,4 +95,21 @@ class Reports extends Admin_Controller
         $this->layout->buffer('content', 'reports/sales_by_year_index')->render();
     }
 
+    public function tax_by_year()
+    {
+        if ($this->input->post('btn_submit')) {
+            $data = array(
+                'results' => $this->mdl_reports->tax_by_year($this->input->post('from_date'), $this->input->post('to_date'))
+            );
+
+            $html = $this->load->view('reports/tax_by_year', $data, TRUE);
+
+            $this->load->helper('mpdf');
+
+            pdf_create($html, lang('tax_by_date'), TRUE);
+        }
+
+        $this->layout->buffer('content', 'reports/tax_by_year_index')->render();
+    }
+
 }
