@@ -421,6 +421,7 @@ Link to Quote: %4$s',
     'system_settings' => 'System Settings',
     'table' => 'Table',
     'tax' => 'Tax',
+    'tax_by_date' => 'Tax by Date'
     'tax_code' => 'Taxes Code',
     'tax_code_short' => 'Tax Code',
     'tax_information' => 'Taxes Information',

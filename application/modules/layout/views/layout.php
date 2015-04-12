@@ -207,6 +207,7 @@
                         <li><?php echo anchor('reports/payment_history', lang('payment_history')); ?></li>
                         <li><?php echo anchor('reports/sales_by_client', lang('sales_by_client')); ?></li>
                         <li><?php echo anchor('reports/sales_by_year', lang('sales_by_date')); ?></li>
+                        <li><?php echo anchor('reports/tax_by_year', lang('tax_by_date')); ?></li>
                     </ul>
                 </li>
 

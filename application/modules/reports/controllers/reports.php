@@ -79,7 +79,6 @@ class Reports extends Admin_Controller
 
     public function sales_by_year()
     {
-
         if ($this->input->post('btn_submit')) {
             $data = array(
                 'results' => $this->mdl_reports->sales_by_year($this->input->post('from_date'), $this->input->post('to_date'), $this->input->post('minQuantity'), $this->input->post('maxQuantity'), $this->input->post('checkboxTax'))
